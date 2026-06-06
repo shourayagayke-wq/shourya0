@@ -1,0 +1,194 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, sans-serif;
+   
+    
+}
+/* Header */
+header{
+    background: white;
+    color: white;
+    padding: 15px 50px;
+    display: flex;
+    color: black;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    background-image: url(logo2-removebg-preview.png);
+    background-size: cover;
+    background-position: center;
+    background-size: 120px;
+    height: 50px;
+    width: 130px;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+nav a{
+    text-decoration: none;
+    color:black;
+    font-size: 18px;
+}
+
+nav a:hover{
+    color: orange;
+}
+
+input{
+    padding: 8px 12px;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+    border: 2px solid black;
+}
+
+/* Hero Section */
+.hero{
+    height: 90vh;
+    background: url("front jnct (1).JPG") center/cover no-repeat;
+}
+
+.overlay{
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+    text-align: center;
+}
+
+.overlay h1{
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+
+.overlay p{
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+button{
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    background: orange;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover{
+    background: darkorange;
+}
+
+/* About Section */
+.about{
+    padding: 60px;
+    text-align: center;
+    background: #f4f4f4;
+    color: #333;
+}
+
+.about h2{
+    margin-bottom: 15px;
+}
+
+.about p{
+    max-width: 700px;
+    margin: auto;
+    line-height: 1.6;
+}
+/* Responsive Design */
+
+@media (max-width: 768px){
+
+    header{
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    nav{
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 10px;
+    }
+
+    nav a{
+        margin: 0;
+    }
+
+    input{
+        width: 200px;
+    }
+
+    .overlay h1{
+        font-size: 32px;
+    }
+
+    .overlay p{
+        font-size: 18px;
+    }
+
+    .about{
+        padding: 30px 20px;
+    }
+}
+
+@media (max-width: 480px){
+
+    .logo{
+        font-size: 24px;
+    }
+
+    .overlay h1{
+        font-size: 26px;
+    }
+
+    .overlay p{
+        font-size: 16px;
+    }
+
+    button{
+        padding: 10px 20px;
+    }
+
+    input{
+        width: 150px;
+    }
+}
+h2{
+    color: #f4f4f4;
+    background-color: #002147;
+    border-radius: 5rem;
+    text-align: center;
+}
+
+
+.gallery{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.gallery img{
+    width:300px;
+    height:200px;
+    object-fit:cover;
+    border-radius:10px;
+
+}
